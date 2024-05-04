@@ -28,10 +28,30 @@ public class W3ResourceLinkedList {
         System.out.println(asc.next());
 
         //problem 4 iterate the linked list in reverse order.
-        System.out.println("Used iterator....");
+        System.out.println("Used iterator....desc");
         Iterator<String> desc = ll.descendingIterator();
         while(desc.hasNext())
         System.out.println(desc.next());
+
+        //problem 5 insert specified element in specified position
+        ll.add(3, "not");
+        System.out.println(ll);
+
+        //problem 6 insert element at first and last position
+        ll.addFirst("begin");
+        ll.addLast("end");
+        System.out.println(ll);
+
+        //problem 7 insert element at front of liked list
+        ll.offerFirst("1");             //deque mthd
+        System.out.println(ll);
+
+        //problem 8 insert element at the end of liked list
+        ll.offerLast("2");              //deque mthd
+        System.out.println(ll);
+
+        //
+        
 
 
     }
