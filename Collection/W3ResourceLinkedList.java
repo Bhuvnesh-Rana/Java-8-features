@@ -1,7 +1,9 @@
 package Collection;
 
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.List;
 
 public class W3ResourceLinkedList {
 
@@ -50,8 +52,45 @@ public class W3ResourceLinkedList {
         ll.offerLast("2");              //deque mthd
         System.out.println(ll);
 
-        //
+        //problem 9 insert some elements in the LinkedList.
+        List<String> newLl = new LinkedList<>();
+        newLl.add("Random");
+        newLl.add("element");
+        ll.addAll(2, newLl);
+        System.out.println("List after inserting new elements from: "+ll);
+
+        //problem 10 find the first and last element from the list.
+        System.out.println("First element: "+ll.getFirst());
+        System.out.println("Last emlement: "+ll.getLast());
+
+        //problem 11 display element and their position in the list.
+        for(int i=0;i<ll.size();i++)
+            System.out.println("Element present at position: "+i+" is: "+ll.get(i));
         
+
+        //problem 12 remove a specified element from the list.
+        ll.remove(1);
+        System.out.println("List after removing specified elemet: "+ll);
+
+        //problem 13 
+        ll.removeFirst();
+        ll.removeLast();
+        System.out.println("List after removing first and last elements: "+ll);
+
+        //problem 14 remove all elements from the list.
+        // ll.removeAll();
+
+        //problem 15 swap 2 elements in the list.
+        Collections.swap(ll, 7, 8);
+        System.out.println("List after swapping elements: "+ll);
+
+        //problem 16 shuffle element in the list.
+        Collections.shuffle(ll);
+        System.out.println("List elements after shuffling: "+ll);
+        
+        //problem 17 join 2 Linked lists.
+
+
 
 
     }
