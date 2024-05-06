@@ -1,5 +1,6 @@
 package Collection;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -7,6 +8,7 @@ import java.util.List;
 
 public class W3ResourceLinkedList {
 
+    @SuppressWarnings("unchecked")
     public static void main(String[] args) {
 
 
@@ -72,7 +74,7 @@ public class W3ResourceLinkedList {
         ll.remove(1);
         System.out.println("List after removing specified elemet: "+ll);
 
-        //problem 13 
+        //problem 13 remove first and last element from the list.
         ll.removeFirst();
         ll.removeLast();
         System.out.println("List after removing first and last elements: "+ll);
@@ -89,6 +91,51 @@ public class W3ResourceLinkedList {
         System.out.println("List elements after shuffling: "+ll);
         
         //problem 17 join 2 Linked lists.
+        // ll.addAll(newLl);
+
+        //problem 18 copy a linked list to another.
+        List<String> coppy = new LinkedList<>();
+        coppy = (List<String>) ll.clone();
+        System.out.println("Copied list: "+coppy);
+
+        //problem 19 remove and return first element of the list.
+        System.out.println("First element in the list to be removed is: "+ll.removeFirst());    //can use pop
+        System.out.println("Remaining list: "+ll);
+
+        //problem 20 retrieve first element of the list.
+        System.out.println("First element of the list is: "+ll.peek());
+
+        //problem 21 retrieve last element of the list.
+        System.out.println("Last element of the list is: "+ll.peekLast());
+
+        //problem 22 check if a particular element is present in the list or not.
+        if (ll.contains("here.")) 
+            System.out.println("Element is present.");
+        else
+            System.out.println("Element not present in the list.");
+
+        //problem 23 covert linked list to an array list.
+        List<String> demoArrayList = new ArrayList<>(ll);
+        System.out.println("Array List is: ");
+        for (String aL : demoArrayList) {
+            System.out.println(aL);
+        }
+
+        //problem 24 compare to lists.
+        List<String> compare = new LinkedList<>();
+        for (String q : ll) {
+            compare.add(newLl.contains(q) ? "yes":"no");
+        }
+        System.out.println("List 1: "+ll);
+        System.out.println("List 2: "+newLl);
+        System.out.println("Comparison list: "+compare);
+
+        //problem 25 check if list is empty or not.
+        System.out.println("Is the list empty? "+ll.isEmpty());
+
+        //problem 26 replace an element from the list.
+        ll.set(2, "FINISHED");
+        System.out.println("List after replacing an element: "+ll);
 
 
 
