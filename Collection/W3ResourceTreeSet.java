@@ -57,8 +57,11 @@ public class W3ResourceTreeSet {
         n.add(6);
         n.add(2);
 
-        Set<Integer> one = n.stream().filter(e -> e<7).collect(Collectors.toSet());
+        Set<Integer> one = n.stream().filter(e -> e<7).collect(Collectors.toSet());     //*can use mthd also
         System.out.println("Numbers less than 7"+one);
+        // for (Integer pr : one) {
+        //     System.out.println(pr);
+        // }
 
         //problem 10 numbers >= to a specific number.
         Set<Integer> two = n.stream().filter(e -> e>=4).collect(Collectors.toSet());
@@ -75,12 +78,22 @@ public class W3ResourceTreeSet {
         //problem 13 numbers < than a specific number.
         Set<Integer> five = n.stream().filter(e -> e<4).collect(Collectors.toSet());
         System.out.println("Numbers < 4 are: "+five);
+        
+        System.out.println(n.lower(4));         //*can use this method also.
 
         //problem 14 retrieve and remove first element of the tree set.
+        System.out.println(colours1.pollFirst());
+        System.out.println(colours1);
 
         //problem 15 retrieve and remove last element of the tree set.
+        System.out.println(colours1.pollLast());
+        System.out.println(colours1);
 
         //problem 16 remove a given element from the tree set.
+        colours1.remove("Red");
+        System.out.println(colours1);
+        colours.remove("Green");
+        System.out.println(colours);
 
 
 
