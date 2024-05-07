@@ -34,6 +34,10 @@ public class W3ResourceTreeSet {
             System.out.println(i.next());
         }
 
+        //problem 5 get the first and last element of the tree set.
+        System.out.println("First element of the tree set "+colours1.first());
+        System.out.println("Last element of the tree set: "+colours1.last());
+
 
     }
 }
