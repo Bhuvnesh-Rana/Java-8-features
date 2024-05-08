@@ -17,7 +17,7 @@ public class W3RStreams {
         List<String> show = two.stream().map(String::toUpperCase).collect(Collectors.toList());
         System.out.println(show);
 
-        //problem 3
+        //problem 3 sun of even no.s in a list.
         int a1 = one.stream().filter(n -> n%2==0).mapToInt(Integer::intValue).sum();
         System.out.println(a1);
 
