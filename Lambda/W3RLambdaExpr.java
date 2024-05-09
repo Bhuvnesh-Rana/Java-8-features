@@ -3,6 +3,7 @@ package Lambda;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@FunctionalInterface
 interface Sum{
     int sum(int a, int b);
 }
