@@ -7,7 +7,7 @@ interface Sum{
     int sum(int a, int b);
 }
 
-public class W3RLambdaEpr {
+public class W3RLambdaExpr {
 public static void main(String[] args) {
     
     //problem 1 find sum of 2 integers using lambda functions.
