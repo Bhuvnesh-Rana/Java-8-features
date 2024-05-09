@@ -82,6 +82,8 @@ public static void main(String[] args) {
     System.out.println("Fact: "+result1);
 
 
+    //problem 9 check if no. is prime or not.
+
     
 }
 }
